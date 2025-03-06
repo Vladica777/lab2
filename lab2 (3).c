@@ -2,8 +2,10 @@
 #include <stdio.h>
 
 int function(int x){
-	x=x-2;
-	return x;
+	if(x<=0)
+		return x;
+	x = x -2;
+		return function(x);
 }
 
 int main(){
